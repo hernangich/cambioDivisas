@@ -53,3 +53,4 @@ do{
 if (continuar == 2){
     alert("Gracias! Lo esperamos en otro momento.");
 }
+
