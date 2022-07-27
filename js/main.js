@@ -1,56 +1,98 @@
+const usuario1 = [];
 
-                //Variables globales
-let pesoArg = 1;
-let dolar = 280;
-let euro = 300;
-let real = 23;
-let continuar;
+let inicio;
+
+alert("¡Bienvenido a MonedApp!");
 
 
-                // Función de cambio
-function cambioMoneda(){    
-    let elegirMoneda = prompt("Elija la moneda que desea comprar:\n1- Dólar Americano\n2- Euro\n3- Real");
+                        // Ingreso usuario
+entrada();
 
-    if (elegirMoneda == 1){
-    
-          function cantDolar(){
-            parseInt(prompt("Ingrese la cantidad de dólares que desea comprar: "));
-          }
+function entrada(){
+      let inicio = parseInt(prompt("1- Iniciar sesión\n2- Crear usuario"));
 
-          let montoDolar = cantDolar();
+      if (inicio == 1){
+            prompt("Ingresa tu nombre de usuario: ");
+            prompt("Ingresa tu contraseña: ");
 
-            if (montoDolar > 0){
-                  let cuenta = montoDolar*dolar;          
-                  alert("El monto en pesos es: $ " + cuenta);
-            }else{
-                  alert("Ingrese un monto en números.");
-                  cantDolar();
+            cambioMoneda();
+
+      } else if (inicio == 2){
+            let nuevoNombreUsuario = prompt("Ingresa un nombre de usuario:");
+            let nuevaContraseña = prompt("Ingresa una contraseña:");
+            let edad = prompt("Ingresa tu edad: ");
+            let pais = prompt("Ingresa tu país: ");
+            let email = prompt("Ingresa tu e-mail: ");
+            let telefono = prompt("Ingresa un número de teléfono: ");
+
+            usuario1.push(nuevoNombreUsuario, nuevaContraseña, edad, pais, email, telefono);
+
+            cambioMoneda();          
+
+      }else{
+            alert("Elija una de las opciones disponibles en el menú: ");
+            entrada();
       }
-    
-    } else if (elegirMoneda == 2){
-    
-          let montoEuro = parseInt(prompt("Ingrese la cantidad de euros que desea comprar: "));
-          let cuenta = montoEuro*euro;          
-          alert("El monto en pesos es: $ " + cuenta);
-    
-    } else if (elegirMoneda == 3){
-    
-          let montoReal = parseInt(prompt("Ingrese la cantidad de reales que desea comprar: "));
-          let cuenta = montoReal*real;          
-          alert("El monto en pesos es: $ " + cuenta);
-    
-    } else {
-          alert("Elija una de las opciones disponibles en el menú: ");
-          cambioMoneda();
-    }
 }
-    
-do{
-    cambioMoneda();
-    continuar = prompt("Desea hacer otro cambio de moneda?\n1- Sí\n2- No");   
-} while (continuar != 2);
 
-if (continuar == 2){
-    alert("Gracias! Lo esperamos en otro momento.");
+                        // Comprar moneda
+function cambioMoneda(){
+
+      let pesoArg = 1;
+      let dolar = 280;
+      let euro = 300;
+      let real = 23;
+
+      let elegirMoneda = parseInt(prompt("Elija la moneda que desea comprar:\n1- Dólar Americano\n2- Euro\n3- Real"));
+
+      if (elegirMoneda == 1){
+      
+            let monto = parseInt(prompt("Ingrese la cantidad de dólares que desea comprar: "));
+            let resultado = monto*dolar;          
+            alert("El monto en pesos es: $ " + resultado);
+
+            continuar();
+      
+      } else if (elegirMoneda == 2){
+      
+            let monto = parseInt(prompt("Ingrese la cantidad de euros que desea comprar: "));
+            let resultado = monto*euro;          
+            alert("El monto en pesos es: $ " + resultado);
+
+            continuar();
+      
+      } else if (elegirMoneda == 3){
+      
+            let monto = parseInt(prompt("Ingrese la cantidad de reales que desea comprar: "));
+            let resultado = monto*real;          
+            alert("El monto en pesos es: $ " + resultado);
+
+            continuar();
+      
+      } else {
+            alert("Elija una de las opciones disponibles en el menú: ");
+            cambioMoneda();
+      }
 }
+
+                        // Continuar
+function continuar(){
+    let continuar = prompt("Desea hacer otro cambio de moneda?\n1- Sí\n2- No");
+    if (continuar == 1){
+        cambioMoneda();
+
+    }else if(continuar == 2){
+        alert("Gracias! Lo esperamos en otro momento.");
+
+    }else{
+        continuar();
+    }
+} 
+
+
+
+
+
+
+
 

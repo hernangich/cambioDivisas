@@ -260,3 +260,86 @@
 // alert(suma1);
 
 
+            //Arrays
+
+// const arrayNotas = [10, 5, 8, 7, 5, 2, 8, 9];
+
+// // for (let i = 0; i<arrayNotas.length; i++){
+// //       console.log(arrayNotas[i]);
+// // }
+
+// // console.log(arrayNotas);
+
+// // arrayNotas.push(3);
+
+// // console.log(arrayNotas);
+
+// // arrayNotas.push(prompt("Agregar nota:"));
+
+// // console.log(arrayNotas);
+
+// // let pop = arrayNotas.pop();
+
+// // console.log(pop);
+
+// const river = ["Armani", "Perez", "Romero"];
+// const boca = ["Rossi", "Rojo", "Varela"];
+
+// const equipos = river.concat(boca);
+
+// // console.log(equipos);
+
+// let slice = arrayNotas.slice(1, 4);
+
+// // console.log(slice);
+
+
+//             //Ejercicio notas con Array []
+
+// function promedio(arrayDeNotas){
+//       let sumatoria = 0;
+      
+//       for (let i = 0; i < arrayDeNotas.length; i++){
+//             sumatoria += arrayDeNotas[i];
+//       }
+
+//       return sumatoria / arrayDeNotas.length;
+// }
+
+// function maximo(arrayDeNotas){
+//       let maximo = arrayDeNotas[0];
+
+//       for (let i = 0; i < arrayDeNotas.length; i++){
+//             if (arrayDeNotas[i] > maximo) maximo = arrayDeNotas[i];
+//       }
+
+//       return maximo;
+// }
+
+
+// const notas = [];
+// let nota;
+
+// nota = parseInt(prompt("Ingrese una nota (-1 para terminar)"));
+
+// while (nota != -1){
+//       notas.push(nota);
+//       nota = parseInt(prompt("Ingrese una nota (-1 para terminar)"));
+// }
+
+// console.log(notas);
+// console.log(promedio(notas));
+// console.log(maximo(notas));
+
+
+// const datos = [];
+
+// let ingresarNombre;
+// let ingresarApellido;
+
+// ingresarNombre = prompt("Ingresa tu nombre");
+// ingresarApellido = prompt("Ingresa tu apellido:");
+
+// datos.push(ingresarNombre, ingresarApellido);
+
+// console.log(datos);
