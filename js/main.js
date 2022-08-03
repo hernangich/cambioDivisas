@@ -1,97 +1,112 @@
-const usuario1 = [];
+// const usuario1 = [];
 
-let inicio;
+// let inicio;
 
-alert("¡Bienvenido a MonedApp!");
+// alert("¡Bienvenido a MonedApp!");
 
 
-                        // Ingreso usuario
-entrada();
+//                         // Ingreso usuario
+// entrada();
 
-function entrada(){
-      let inicio = parseInt(prompt("1- Iniciar sesión\n2- Crear usuario"));
+// function entrada(){
+//       let inicio = parseInt(prompt("1- Iniciar sesión\n2- Crear usuario"));
 
-      if (inicio == 1){
-            prompt("Ingresa tu nombre de usuario: ");
-            prompt("Ingresa tu contraseña: ");
+//       if (inicio == 1){
+//             prompt("Ingresa tu nombre de usuario: ");
+//             prompt("Ingresa tu contraseña: ");
 
-            cambioMoneda();
+//             cambioMoneda();
 
-      } else if (inicio == 2){
-            let nuevoNombreUsuario = prompt("Ingresa un nombre de usuario:");
-            let nuevaContraseña = prompt("Ingresa una contraseña:");
-            let edad = prompt("Ingresa tu edad: ");
-            let pais = prompt("Ingresa tu país: ");
-            let email = prompt("Ingresa tu e-mail: ");
-            let telefono = prompt("Ingresa un número de teléfono: ");
+//       } else if (inicio == 2){
+//             let nuevoNombreUsuario = prompt("Ingresa un nombre de usuario:");
+//             let nuevaContraseña = prompt("Ingresa una contraseña:");
+//             let edad = prompt("Ingresa tu edad: ");
+//             let pais = prompt("Ingresa tu país: ");
+//             let email = prompt("Ingresa tu e-mail: ");
+//             let telefono = prompt("Ingresa un número de teléfono: ");
 
-            usuario1.push(nuevoNombreUsuario, nuevaContraseña, edad, pais, email, telefono);
+//             usuario1.push(nuevoNombreUsuario, nuevaContraseña, edad, pais, email, telefono);
 
-            cambioMoneda();          
+//             cambioMoneda();          
 
-      }else{
-            alert("Elija una de las opciones disponibles en el menú: ");
-            entrada();
-      }
+//       }else{
+//             alert("Elija una de las opciones disponibles en el menú: ");
+//             entrada();
+//       }
+// }
+
+//                         // Comprar moneda
+// function cambioMoneda(){
+
+//       let pesoArg = 1;
+//       let dolar = 280;
+//       let euro = 300;
+//       let real = 23;
+
+//       let elegirMoneda = parseInt(prompt("Elija la moneda que desea comprar:\n1- Dólar Americano\n2- Euro\n3- Real"));
+
+//       if (elegirMoneda == 1){
+      
+//             let monto = parseInt(prompt("Ingrese la cantidad de dólares que desea comprar: "));
+//             let resultado = monto*dolar;          
+//             alert("El monto en pesos es: $ " + resultado);
+
+//             continuar();
+      
+//       } else if (elegirMoneda == 2){
+      
+//             let monto = parseInt(prompt("Ingrese la cantidad de euros que desea comprar: "));
+//             let resultado = monto*euro;          
+//             alert("El monto en pesos es: $ " + resultado);
+
+//             continuar();
+      
+//       } else if (elegirMoneda == 3){
+      
+//             let monto = parseInt(prompt("Ingrese la cantidad de reales que desea comprar: "));
+//             let resultado = monto*real;          
+//             alert("El monto en pesos es: $ " + resultado);
+
+//             continuar();
+      
+//       } else {
+//             alert("Elija una de las opciones disponibles en el menú: ");
+//             cambioMoneda();
+//       }
+// }
+
+//                         // Continuar
+// function continuar(){
+//     let continuar = prompt("Desea hacer otro cambio de moneda?\n1- Sí\n2- No");
+//     if (continuar == 1){
+//         cambioMoneda();
+
+//     }else if(continuar == 2){
+//         alert("Gracias! Lo esperamos en otro momento.");
+
+//     }else{
+//         continuar();
+//     }
+// } 
+
+let boton = document.getElementById("botonNueva")
+
+boton.onclick = () => {
+      alert("Para continuar tenés que ser mayor de 18 años");
+      pregunta();
 }
 
-                        // Comprar moneda
-function cambioMoneda(){
-
-      let pesoArg = 1;
-      let dolar = 280;
-      let euro = 300;
-      let real = 23;
-
-      let elegirMoneda = parseInt(prompt("Elija la moneda que desea comprar:\n1- Dólar Americano\n2- Euro\n3- Real"));
-
-      if (elegirMoneda == 1){
-      
-            let monto = parseInt(prompt("Ingrese la cantidad de dólares que desea comprar: "));
-            let resultado = monto*dolar;          
-            alert("El monto en pesos es: $ " + resultado);
-
-            continuar();
-      
-      } else if (elegirMoneda == 2){
-      
-            let monto = parseInt(prompt("Ingrese la cantidad de euros que desea comprar: "));
-            let resultado = monto*euro;          
-            alert("El monto en pesos es: $ " + resultado);
-
-            continuar();
-      
-      } else if (elegirMoneda == 3){
-      
-            let monto = parseInt(prompt("Ingrese la cantidad de reales que desea comprar: "));
-            let resultado = monto*real;          
-            alert("El monto en pesos es: $ " + resultado);
-
-            continuar();
-      
+function pregunta () {
+      let preguntaMayor18 = prompt("¿Eres mayor de edad?\n1- Sí\n2- No");
+      if (preguntaMayor18 == 1){
+            alert("Bienvenido a MonedApp");
+      } else if (preguntaMayor18 == 2){
+            alert("Lo sentimos. Para operar con nosotros tienes que ser mayor de 18 años.");
       } else {
-            alert("Elija una de las opciones disponibles en el menú: ");
-            cambioMoneda();
+            alert("Ingresa una opción correcta");
+            pregunta();
       }
 }
-
-                        // Continuar
-function continuar(){
-    let continuar = prompt("Desea hacer otro cambio de moneda?\n1- Sí\n2- No");
-    if (continuar == 1){
-        cambioMoneda();
-
-    }else if(continuar == 2){
-        alert("Gracias! Lo esperamos en otro momento.");
-
-    }else{
-        continuar();
-    }
-} 
-
-
-
-
 
 
 

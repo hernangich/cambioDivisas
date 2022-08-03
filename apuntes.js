@@ -343,3 +343,53 @@
 // datos.push(ingresarNombre, ingresarApellido);
 
 // console.log(datos);
+
+
+// const cursos = [
+//       {nombre: "Javascript", precio: 15000},
+//       {nombre: "ReactJS", precio: 22000},
+//       {nombre: "AngularJS", precio: 22000},
+//       {nombre: "Desarrollo Web", precio: 16000},
+// ]
+
+// const resultado = cursos.find((el) => el.nombre === "Javascript");
+// const resultado2 = cursos.find((el) => el.precio === 16000);
+// console.log(resultado);
+// console.log(resultado2);
+
+// const nombres = cursos.map((el) => el.nombre);
+// console.log(nombres);
+
+
+// let boton = document.getElementById("boton");
+
+// boton.addEventListener("click", () => {
+//       alert("Hiciste click");
+// })
+
+// const num = [1, 2, 3, 4, 5, 6]
+
+// const total = num.reduce((acumulador, elemento) => acumulador + elemento, 5);
+
+// alert(total);
+
+// const hoy = new Date("july 28, 2022 23:59:59");
+
+// alert(hoy);
+
+localStorage.setItem("Nombre", "Hernan");
+localStorage.setItem("Edad", 34);
+
+// console.log(localStorage.getItem("Nombre"));
+// console.log(localStorage.getItem("Edad"));
+
+for (let i = 0; i < localStorage.length; i++) {
+      let clave = localStorage.key(i);
+      let valor = localStorage.getItem(clave);
+
+      console.log(valor);
+      console.log(typeof valor);
+}
+
+localStorage.removeItem("Nombre");
+
