@@ -1,74 +1,111 @@
+:root{
+    font-size: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 * {
     margin: 0rem;
     padding: 0rem;
+    box-sizing: border-box;
 }
 
-body{
-    background-color:burlywood;
+a{
+    text-decoration: none;
+    color: black;
 }
 
-header{
-    display: flex;
-    justify-content: center;
-}
-
-h1{
-    color:royalblue;
-    font-size: 3rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-top: 3.5rem;
+.titulo{
+    text-align: center;
+    font-size: 5rem;
+    margin: 5rem auto;
 }
 
 .paises{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 1rem;
+    gap: 2rem;
 }
 
-.imgPais {
-    width: 2rem;
-    height: 1.5rem;
-    margin: 0rem 0.5rem;
+.imgPais{
+    width: 2.5rem;
+}
+
+.mainIndex{
+    margin: 3.5rem 10rem;
 }
 
 .textoIndex{
     text-align: center;
-    margin: 4.5rem 20rem;
-    font-size: 1.3rem;
+    font-size: 2.4rem;
 }
 
-.ingresar{
+.ingresoApp{
     display: flex;
     justify-content: center;
+    margin-top: 6rem;
 }
 
-.ingresarTexto{
-    margin: 1rem 4rem;
+.botonTexto{
+    text-align: center;
 }
 
-.botones{
+.ingresarCuenta, .crearCuenta{
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    gap: 1rem;
+    margin: auto 8rem;
 }
 
 .botonIndex{
-    margin: 1rem 5.5rem;
-    padding: 0.5rem;
+    padding: 1rem;
     border-radius: 1rem;
+    border: 0.2rem solid darkslategrey;
+    font-weight: bold;
 }
 
 .footer{
-    display: flex;
-    justify-content: space-around;
-    background-color: royalblue;
-    margin-top: 10.2rem;
+    margin-top: 10rem;
+    margin-left: 1rem;
 }
 
-.redes{
-    display: flex;
+.derechos{
+    text-align: center;
 }
 
-.textoRedes{
-    padding: 0rem 5rem;
+@media only screen and (max-width: 390px){
+    .mainIndex{
+        margin: auto;
+    }
+    .textoIndex{
+        margin: 2rem;
+    }
+    .ingresoApp{
+        flex-direction: column;
+    }
+    .ingresarCuenta, .crearCuenta{
+        margin: auto;
+    }
+    .ingresarCuenta{
+        margin-top: 4rem;
+    }
+}
+
+@media only screen and (max-width: 280px){
+    .mainIndex{
+        margin: auto;
+    }
+    .textoIndex{
+        margin: 2rem;
+    }
+}
+
+@media only screen and (max-width: 414px){
+    .mainIndex{
+        margin: auto;
+    }
+    .textoIndex{
+        margin: 2rem;
+    }
 }

@@ -2,7 +2,6 @@
 
 // let inicio;
 
-// alert("¡Bienvenido a MonedApp!");
 
 
 //                         // Ingreso usuario
@@ -92,21 +91,10 @@
 let boton = document.getElementById("botonNueva")
 
 boton.onclick = () => {
-      alert("Para continuar tenés que ser mayor de 18 años");
-      pregunta();
+      alert("Declaro ser mayor de edad para poder operar con MonedApp");
 }
 
-function pregunta () {
-      let preguntaMayor18 = prompt("¿Eres mayor de edad?\n1- Sí\n2- No");
-      if (preguntaMayor18 == 1){
-            alert("Bienvenido a MonedApp");
-      } else if (preguntaMayor18 == 2){
-            alert("Lo sentimos. Para operar con nosotros tienes que ser mayor de 18 años.");
-      } else {
-            alert("Ingresa una opción correcta");
-            pregunta();
-      }
-}
+
 
 
 

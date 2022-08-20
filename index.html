@@ -9,7 +9,9 @@
 </head>
 <body>
     <header>
-        <h1> MonedApp </h1>
+        <h1 class="titulo"> 
+            <a href="index.html"> MonedApp </a>
+        </h1>
     </header>
 
     <div class="paises">
@@ -19,30 +21,31 @@
         <img class="imgPais" src="img/brasil.png" alt="">
     </div>
 
-    <main>
+    <main class="mainIndex">
         <p class="textoIndex">
             Bienvenido a <b>MonedApp</b>, tu cuenta virtual para comprar moneda extranjera. Deposita, compra o vende y ahorra con total tranquilidad. Enterate más <b>acá</b>
         </p>
-        <div class="ingresar">
-            <h2 class="ingresarTexto"> ¿No tienes cuenta? </h2>
-            <h2 class="ingresarTexto"> Ya tengo cuenta </h2>
-        </div>
+        <div class="ingresoApp"> 
+            <div class="crearCuenta">
+                <h2 class="botonTexto"> ¿No tienes cuenta? </h2>
+                <button class="botonIndex"> 
+                    <a href="pages/formulario.html"> Crear cuenta nueva </a>
+                </button>
+            </div>
 
-        <div class="botones">
-            <button class="botonIndex" id="botonNueva"> Crear cuenta nueva </button>
-            <button class="botonIndex"> Ingresar a mi cuenta </button>
+            <div class="ingresarCuenta">
+                <h2 class="botonTexto"> Ya tengo cuenta </h2>
+                <button class="botonIndex">
+                    <a href="pages/monedApp.html"> Ingresar a mi cuenta </a>
+                </button>
+            </div>
         </div>
     </main>
 
     <footer class="footer">
-        <div class="redes">
-            <h3 class="textoRedes"> Instagram </h3>
-            <h3 class="textoRedes"> Twitter </h3>  
-        </div>
-        <div class="derechos">
-            <h3> Copyright © 2022 </h3>
-        </div>
+        <h3 class="derechos"> Todos los derechos reservados © 2022 · MonedApp · </h3>
     </footer>
+
     <script src="js/main.js"></script>
 </body>
 </html>
