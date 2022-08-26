@@ -72,24 +72,3 @@ a{
     }
 }
 
-/* @media only screen and (max-width: 912px){
-    .botones{
-        display: flex;
-        flex-direction: column;
-    }
-    .textoBoton{
-        margin: auto 20rem;
-    }
-    .titulo{
-        padding: 15rem;
-    }
-    .paises{
-        margin-top: 16rem;
-    }
-    .mainIndex{
-        margin-top: 15rem;
-    }
-    .botones{
-        margin-top: 15rem;
-    }
-} */
