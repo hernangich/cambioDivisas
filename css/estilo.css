@@ -1,6 +1,5 @@
 :root{
     font-size: 10px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 * {
@@ -17,7 +16,11 @@ a{
 .titulo{
     text-align: center;
     font-size: 5rem;
-    margin: 5rem auto;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    background-color: yellow;
+    padding: 5rem;
+    border-bottom: 0.5rem gray solid;
 }
 
 .paises{
@@ -25,6 +28,7 @@ a{
     flex-direction: row;
     justify-content: center;
     gap: 2rem;
+    margin-top: 5rem;
 }
 
 .imgPais{
@@ -32,80 +36,60 @@ a{
 }
 
 .mainIndex{
-    margin: 3.5rem 10rem;
-}
-
-.textoIndex{
+    margin-top: 5rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
     text-align: center;
-    font-size: 2.4rem;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
 }
 
-.ingresoApp{
+.botones{
     display: flex;
     justify-content: center;
-    margin-top: 6rem;
+    margin-top: 9rem;
+    gap: 10rem;
 }
 
-.botonTexto{
-    text-align: center;
+.textoBoton{
+    font-size: 2.5rem;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    border: 0.3rem solid gray;
+    border-radius: 2.5rem;
+    padding: 2rem;;
 }
 
-.ingresarCuenta, .crearCuenta{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 1rem;
-    margin: auto 8rem;
+.linkBoton:hover{
+    text-decoration: underline;
 }
 
-.botonIndex{
-    padding: 1rem;
-    border-radius: 1rem;
-    border: 0.2rem solid darkslategrey;
-    font-weight: bold;
-}
-
-.footer{
-    margin-top: 10rem;
-    margin-left: 1rem;
-}
-
-.derechos{
-    text-align: center;
-}
-
-@media only screen and (max-width: 390px){
-    .mainIndex{
-        margin: auto;
+@media only screen and (max-width: 768px){
+    .botones{
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
     }
-    .textoIndex{
-        margin: 2rem;
-    }
-    .ingresoApp{
+}
+
+/* @media only screen and (max-width: 912px){
+    .botones{
+        display: flex;
         flex-direction: column;
     }
-    .ingresarCuenta, .crearCuenta{
-        margin: auto;
+    .textoBoton{
+        margin: auto 20rem;
     }
-    .ingresarCuenta{
-        margin-top: 4rem;
+    .titulo{
+        padding: 15rem;
     }
-}
-
-@media only screen and (max-width: 280px){
+    .paises{
+        margin-top: 16rem;
+    }
     .mainIndex{
-        margin: auto;
+        margin-top: 15rem;
     }
-    .textoIndex{
-        margin: 2rem;
+    .botones{
+        margin-top: 15rem;
     }
-}
-
-@media only screen and (max-width: 414px){
-    .mainIndex{
-        margin: auto;
-    }
-    .textoIndex{
-        margin: 2rem;
-    }
-}
+} */
