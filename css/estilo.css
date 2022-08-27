@@ -1,18 +1,17 @@
 :root{
     font-size: 10px;
 }
-
 * {
     margin: 0rem;
     padding: 0rem;
     box-sizing: border-box;
 }
-
 a{
     text-decoration: none;
     color: black;
 }
 
+        /* Head */
 .titulo{
     text-align: center;
     font-size: 5rem;
@@ -23,6 +22,7 @@ a{
     border-bottom: 0.5rem gray solid;
 }
 
+        /* Main */
 .paises{
     display: flex;
     flex-direction: row;
@@ -30,11 +30,9 @@ a{
     gap: 2rem;
     margin-top: 5rem;
 }
-
 .imgPais{
     width: 2.5rem;
 }
-
 .mainIndex{
     margin-top: 5rem;
     margin-left: 3rem;
@@ -43,27 +41,83 @@ a{
     font-family: 'Oswald', sans-serif;
     font-size: 2rem;
 }
-
 .botones{
     display: flex;
     justify-content: center;
     margin-top: 9rem;
     gap: 10rem;
 }
-
 .textoBoton{
     font-size: 2.5rem;
     font-family: 'Oswald', sans-serif;
     font-weight: 500;
     border: 0.3rem solid gray;
     border-radius: 2.5rem;
-    padding: 2rem;;
+    padding: 2rem;
 }
-
 .linkBoton:hover{
     text-decoration: underline;
 }
 
+        /* Formulario */
+.form{
+    width: 35rem;
+    padding: 1rem;
+    margin: auto;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+    background-color: yellow;
+    border-radius: 2rem;
+    border: 0.2rem solid gray;
+    box-shadow: 0.5rem 1rem 3rem #000;
+}
+.tituloForm{
+    text-align: center;
+    padding-top: 1.8rem;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+}
+.preTerminos{
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    margin-top: 1.5rem;
+    margin-bottom: 1.2rem;
+    font-size: 1.5rem;
+}
+.terminos{
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+}
+
+.terminos:hover{
+    text-decoration: underline;
+}
+.registrarme{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.6rem;
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 1rem;
+}
+.registrarme:hover{
+    font-weight: bold;
+}
+#botonForm{
+    font-family: 'Oswald', sans-serif;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 0.2rem solid gray;
+    margin: 0.5rem auto;
+}
+.cuadrosForm{
+    margin-top: 2rem;
+}
+
+        /* Querie */
 @media only screen and (max-width: 768px){
     .botones{
         display: flex;
@@ -71,4 +125,16 @@ a{
         gap: 5rem;
     }
 }
-
+@media only screen and (min-width: 768px){
+    .form{
+        width: 75rem;
+    }
+    .contenedorBoton{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .registrarme{
+        width: 40rem;
+        justify-self: center;
+    }
+}
